@@ -272,7 +272,8 @@ public class GeoCircular : GeoElement
 
     public Circular Circular()
     {
-        return new Circular(vertexs.Select(v => v.Position()).ToArray(), radius1, radius2, type);
+        return new Circular(
+            vertexs.Select(v => v.Position()).ToArray(), radius1, radius2, type);
     }
 
     public override string ToString()
